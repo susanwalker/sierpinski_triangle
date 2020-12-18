@@ -1,21 +1,26 @@
 # SierpinskiTriangle
 
-**TODO: Add description**
+This project generates a `SierpinskiTriangle` using Elixir and Erlang Graphic
+Drawer (`:egd`).
 
-## Installation
+## What is a SierpinskiTriangle?
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `sierpinski_triangle` to your list of dependencies in `mix.exs`:
+_Wikipedia_:
+>
+  The Sierpiński triangle (sometimes spelled Sierpinski), also called the Sierpiński
+  gasket or Sierpiński sieve, is a fractal attractive fixed set with the overall
+  shape of an equilateral triangle, subdivided recursively into smaller equilateral
+  triangles
+
+## Generated Triangle
+
+![generate_image](test.png)
+
+## Usage
 
 ```elixir
-def deps do
-  [
-    {:sierpinski_triangle, "~> 0.1.0"}
-  ]
-end
+iex> SierpinskiTriangle.draw(10)
+:ok
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/sierpinski_triangle](https://hexdocs.pm/sierpinski_triangle).
-
+The file is generated at `./test.png`
